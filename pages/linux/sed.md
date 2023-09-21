@@ -23,3 +23,7 @@
 - Replace all `apple` (basic regex) occurrences with `mango` (basic regex) in a specific file and overwrite the original file in place:
 
 `sed -i 's/apple/mango/g' {{path/to/file}}`
+
+- Remove blank lines in a specific file and overwrite the original file in place:
+
+`sed -i '/^$/d' {{path/to/file}}`
